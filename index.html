@@ -8,12 +8,14 @@
     </head>
     <body>
         <img id="ad-detect" class="img_ad" src="01.jpg" />
+        <p id="result"></p>
 
         <script>
             var o = document.getElementById('ad-detect');
             
             if (o.clientHeight == 0 && o.clientWidth == 0) {
                console.log('adblock on');
+                document.getElementById('result').innerHTML('Adblock включен, картиночку не видно((');
            } else {
                console.log('adblock off');
            }
